@@ -21,6 +21,15 @@ keymap.set("n", "<leader>sh", "<C-w>s") -- 垂直新增窗口
 -- 取消高亮  leader+nh
 keymap.set("n", "<leader>nh", ":nohl<CR>") -- no high light
 
+
+
+-- plugin-Navigator.lua  切换文档树和内容（切换窗口）
+keymap.set({'n', 't'}, '<A-h>', '<CMD>NavigatorLeft<CR>')
+keymap.set({'n', 't'}, '<A-l>', '<CMD>NavigatorRight<CR>')
+keymap.set({'n', 't'}, '<A-k>', '<CMD>NavigatorUp<CR>')
+keymap.set({'n', 't'}, '<A-j>', '<CMD>NavigatorDown<CR>')
+keymap.set({'n', 't'}, '<A-p>', '<CMD>NavigatorPrevious<CR>')
+
 -- nvim-tree plugin  : leader + e 切换显示
 -- keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
