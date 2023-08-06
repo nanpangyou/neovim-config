@@ -19,7 +19,6 @@ return {
       require("mason-lspconfig").setup {
         ensure_installed = { 
           "lua_ls", 
-          "asm_lsp",
           "bashls",
           "pkgbuild_language_server",
           "clangd", 
