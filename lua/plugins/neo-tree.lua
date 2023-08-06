@@ -213,6 +213,6 @@ return {
              use_libuv_file_watcher = false, -- This will use the OS level file watchers to detect changes
         },
       })
-      vim.cmd([[nnoremap \ :Neotree buffers git_status filesystem reveal<cr>]])
+      vim.cmd([[nnoremap \ :Neotree buffers git_status filesystem reveal toggle=true<cr>]])
     end,
 }
